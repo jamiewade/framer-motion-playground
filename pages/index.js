@@ -1,24 +1,12 @@
-import Link from "next/link"
+import { motion } from "framer-motion"
+import Navigation from "components/navigation"
 
 export default function Home() {
 	return (
-		<ul>
-			<li>
-				<Link href="/example-01">
-					<a>Example 01</a>
-				</Link>
-			</li>
-
-			<li>
-				<Link href="/example-02">
-					<a>Example 02</a>
-				</Link>
-			</li>
-			<li>
-				<Link href="/example-03">
-					<a>Example 03</a>
-				</Link>
-			</li>
-		</ul>
+		<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+			<div className="p-8">
+				<Navigation />
+			</div>
+		</motion.div>
 	)
 }
