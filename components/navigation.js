@@ -4,6 +4,12 @@ export default function Navigation() {
 	return (
 		<ul>
 			<li>
+				<Link href="/">
+					<a>Homepage</a>
+				</Link>
+			</li>
+
+			<li>
 				<Link href="/example-01">
 					<a>Example 01</a>
 				</Link>
